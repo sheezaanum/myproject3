@@ -1,0 +1,137 @@
+:root {
+--dark-color: #822659;
+--mid-color:#b34180;
+--light-color:  #f8a1d1;
+--dark-blue: #09015f;
+--light-purple:#8b5e83;
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+li a{
+	color: #ffff!important;
+	font-family: 'Playfair Display', serif;
+}
+.navbar1{
+	background:var(--mid-color);
+}
+
+.section1{
+	width: 100%;
+	display: flex;
+	/*flex-wrap: wrap!important;*/
+}
+
+/*side bar css start*/
+.sidebar{
+
+	width: 20%!important;
+	background:var(--dark-color) ;
+	height: 100vh;
+}
+.sidebar li{
+	margin:5px;
+	padding-left: 20px;
+	font-family: 'Playfair Display', serif;
+	color: #ffff;
+}
+.sidebar li:hover{
+	background:var(--mid-color)!important;
+}
+/*side bar css end*/
+
+/*main content css start*/
+.main{
+	width: 80%!important;
+	height: 100vh;
+	background-image: linear-gradient(#e36b,rgba(0,111,146,0.5)),url(images/img1.jpg);
+	background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	 z-index: -1;
+
+}
+.main-content{
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	margin-top: 30%;
+	margin-left: 40%;
+	color: #ffff;
+	
+
+}
+
+
+/*main content css end*/
+/*Section 2 gallery start*/
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f8a1d1!important;
+	padding-bottom: 40px!important;
+}
+.flex-container .flex-item{
+	width: 200px!important;
+	height: 200px!important;
+	padding-top: 10px;
+	margin: 2px;
+}
+.flex-item img{
+	width: 100%!important;
+	height: 100%!important;
+}
+/*section 2 end*/
+/*section3 card*/
+.card-container{
+	margin-top: 20px!important;
+}
+.card-container .card{
+	margin: 20px;
+	font-family: 'Playfair Display', serif;
+}
+.card-img-zoom{
+	overflow: hidden;
+}
+.card-img-zoom img{
+	transition: all 1.5s ease;
+}
+.card-img-zoom img:hover{
+	transform: scale(1.5);
+}
+
+/*section3 card*/
+/*section4 contact start*/
+.contact{
+	width: 50%!important;
+	margin: auto;
+	padding: 40px;
+   
+}
+.contact:hover{
+	width: 50%!important;
+	margin: auto;
+    -webkit-box-shadow: 0px 0px 14px 7px rgba(242,242,242,0.91); 
+     box-shadow: 0px 0px 14px 7px rgba(242,242,242,0.91);
+}
+/*section5 start footer*/
+.section5{
+	background:var(--mid-color);
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+}
+.section5 li{
+	list-style: none;
+}
+/*Section5 footer end*/
+@media (max-width:768px){
+	
+	.card-container .card{
+		margin-left:150px;
+	}
+}
